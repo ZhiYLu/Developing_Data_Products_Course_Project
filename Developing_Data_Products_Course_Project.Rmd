@@ -1,0 +1,53 @@
+---
+title: "Developing Data Products Course Project"
+output: ioslides_presentation
+author: "Zhiyu Lu"
+date: '2022-11-25'
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(ggplot2)
+
+```
+
+## Introduction
+
+Here, we create the graphs showing how diamonds are priced depend on not only the number of carat, but their cut, color, and clarity.
+
+* **Cut:** Quality of the diamonds (Ideal, Premium, Very Good, Good, Fair).
+
+* **Color:** Colour of diamonds from the best to the worst (D, E, F, G, H, I).
+
+* **Clarity:** Measurement of how clear the diamond is from the best to the worst (IF, VVS2, VVS1, VS2, VS1, SI2, SI1, I1).
+
+## Overview
+
+* The application is written in Shiny, a web application framework for R.
+
+* The source code consists of two files: server.R and ui.R.
+
+* server.R includes the backend of a Shiny web application.
+
+* ui.R includes the the user-interface elements.
+
+* The application is hosted on Rstudio’s shiny server.
+
+## Documentation
+
+Here is the summary of the dataset "diamonds", which includes approximately 5000 cases.
+
+```{r, echo=FALSE}
+data(diamonds)
+plot(diamonds[,c(1:4,7)])
+```
+
+## Try the App
+
+Use the Shiny app at
+
+<https://zhiyulu.shinyapps.io/Developing_Data_Products_Course_Project/>
+
+Get the app source code at
+
+<https://github.com/ZhiYLu/Developing_Data_Products_Course_Project/upload/main>
